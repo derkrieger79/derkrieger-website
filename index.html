@@ -8,361 +8,190 @@
   <meta name="author" content="Martin Krieger">
   <meta property="og:title" content="Der Krieger">
   <meta property="og:description" content="Podcast · Speaker · Musiker. Bewusstsein trifft urbane Energie.">
-  <meta property="og:image" content="images/hero.jpg">
+  <meta property="og:image" content="https://derkrieger.at/images/hero.jpg">
   <meta property="og:url" content="https://derkrieger.at">
+  <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&family=Manrope:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
 
-  <!-- ═══════════════════════════════════════
-       NAVBAR
-  ═══════════════════════════════════════ -->
-  <nav id="navbar">
-    <a href="#hero" class="nav-logo">DER <span>KRIEGER</span></a>
-    <div class="nav-links" id="navLinks">
-      <a href="#podcast">Podcast</a>
-      <a href="#events">Events</a>
-      <a href="#speaker">Speaker</a>
-      <a href="#blog">Blog</a>
-      <a href="#speaker" class="btn-outline">Buchen</a>
-    </div>
-    <div class="nav-toggle" id="navToggle" aria-label="Menü öffnen">
-      <span></span><span></span><span></span>
-    </div>
-  </nav>
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">DER <span>KRIEGER</span></a>
+  <div class="nav-links" id="navLinks">
+    <a href="#podcast">Podcast</a>
+    <a href="#events">Events</a>
+    <a href="#speaker">Speaker</a>
+    <a href="#blog">Blog</a>
+    <a href="#speaker" class="btn-outline">Buchen</a>
+  </div>
+  <div class="nav-toggle" id="navToggle" aria-label="Menü öffnen">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
 
-  <!-- ═══════════════════════════════════════
-       HERO
-  ═══════════════════════════════════════ -->
-  <section id="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-overlay"></div>
-    <div class="hero-overlay-bottom"></div>
-    <div class="hero-accent-bar"></div>
-    <div class="hero-content">
-      <div class="section-label">Podcast · Speaker · Musiker</div>
-      <h1>DER<br><span>KRIEGER</span></h1>
-      <p>Bewusstsein trifft urbane Energie.<br>Ehrlich. Direkt. Ohne Filter.</p>
-      <div class="hero-btns">
-        <a href="#podcast" class="btn-primary">▶ Podcast hören</a>
-        <a href="#speaker" class="btn-outline">Speaker buchen</a>
-      </div>
-    </div>
-    <div class="hero-scroll">Mehr entdecken</div>
-  </section>
-
-  <!-- ═══════════════════════════════════════
-       STATS BAR
-  ═══════════════════════════════════════ -->
-  <div class="stats-bar">
-    <div class="stat-item fade-up">
-      <div class="stat-number" style="color: var(--orange);">24</div>
-      <div class="stat-label">Episoden</div>
-    </div>
-    <div class="stat-item fade-up" style="transition-delay:0.1s">
-      <div class="stat-number" style="color: var(--cyan);">4.8k</div>
-      <div class="stat-label">Follower</div>
-    </div>
-    <div class="stat-item fade-up" style="transition-delay:0.2s">
-      <div class="stat-number">6+</div>
-      <div class="stat-label">Jahre On Stage</div>
-    </div>
-    <div class="stat-item fade-up" style="transition-delay:0.3s">
-      <div class="stat-number" style="color: var(--orange);">∞</div>
-      <div class="stat-label">Impact</div>
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-accent-bar"></div>
+  <div class="hero-content">
+    <span class="section-label" id="heroSubtitle">Podcast · Speaker · Musiker</span>
+    <h1>DER<br><span>KRIEGER</span></h1>
+    <p id="heroClaim">Bewusstsein trifft urbane Energie.<br>Ehrlich. Direkt. Ohne Filter.</p>
+    <div class="hero-btns">
+      <a href="#podcast" class="btn-primary">▶&nbsp; Podcast hören</a>
+      <a href="#speaker" class="btn-outline">Speaker buchen</a>
     </div>
   </div>
+</section>
 
-  <!-- ═══════════════════════════════════════
-       PODCAST
-  ═══════════════════════════════════════ -->
-  <section id="podcast" class="section section-dark">
-    <div class="section-header fade-up">
-      <div class="section-label">Alle Episoden</div>
-      <h2>Der Krieger<br>Podcast</h2>
-    </div>
-    <div class="podcast-grid">
-      <!-- Episode Liste -->
+<section id="stats">
+  <div class="stats-grid">
+    <div class="stat-item reveal"><span class="stat-number" id="statEpisodes">24</span><span class="stat-label">Episoden</span></div>
+    <div class="stat-item reveal"><span class="stat-number" id="statFollowers">4.8k</span><span class="stat-label">Follower</span></div>
+    <div class="stat-item reveal"><span class="stat-number" id="statYears">6+</span><span class="stat-label">Jahre on Stage</span></div>
+    <div class="stat-item reveal"><span class="stat-number" id="statImpact">∞</span><span class="stat-label">Impact</span></div>
+  </div>
+</section>
+
+<section id="podcast">
+  <div class="container">
+    <div class="podcast-layout">
       <div>
-        <div class="episode-list">
-
-          <div class="episode active fade-up">
-            <div class="ep-num">#024</div>
-            <div class="ep-info">
-              <div class="ep-title">Wie du aufhörst, dich zu verstecken <span class="badge-new">NEU</span></div>
-              <div class="ep-desc">Authentizität als Kraftquelle</div>
-            </div>
-            <div class="ep-dur">58 min</div>
-            <div class="ep-play">▶</div>
-          </div>
-
-          <div class="episode fade-up">
-            <div class="ep-num">#023</div>
-            <div class="ep-info">
-              <div class="ep-title">Der Unterschied zwischen Ego und Selbst</div>
-              <div class="ep-desc">Psychologie & Praxis</div>
-            </div>
-            <div class="ep-dur">51 min</div>
-            <div class="ep-play">▶</div>
-          </div>
-
-          <div class="episode fade-up">
-            <div class="ep-num">#022</div>
-            <div class="ep-info">
-              <div class="ep-title">Warum du keine Motivation brauchst</div>
-              <div class="ep-desc">Systeme schlagen Willenskraft</div>
-            </div>
-            <div class="ep-dur">44 min</div>
-            <div class="ep-play">▶</div>
-          </div>
-
-          <div class="episode fade-up">
-            <div class="ep-num">#021</div>
-            <div class="ep-info">
-              <div class="ep-title">Kontrolle loslassen — ohne den Halt zu verlieren</div>
-              <div class="ep-desc">Vertrauen als Strategie</div>
-            </div>
-            <div class="ep-dur">62 min</div>
-            <div class="ep-play">▶</div>
-          </div>
-
-          <div class="episode fade-up">
-            <div class="ep-num">#020</div>
-            <div class="ep-info">
-              <div class="ep-title">Die Lüge der Work-Life-Balance</div>
-              <div class="ep-desc">Integration statt Trennung</div>
-            </div>
-            <div class="ep-dur">49 min</div>
-            <div class="ep-play">▶</div>
-          </div>
-
-        </div>
-        <div style="margin-top: 24px;">
-          <a href="#" class="btn-outline" style="font-size:0.7rem;">Alle Episoden ansehen →</a>
-        </div>
+        <span class="section-label reveal">Der Krieger Podcast</span>
+        <h2 class="section-title reveal">Rohe Wahrheit.<br><span>Ohne Filter.</span></h2>
+        <p class="section-intro reveal">Jede Episode ist ein Gespräch — mit Gästen, mit mir selbst, mit dem, was ist. Kein Skript. Keine Pose. Nur ehrliche Auseinandersetzung mit den Themen, die wirklich zählen.</p>
+        <div class="divider reveal"></div>
+        <div class="episode-list" id="episodeList"></div>
       </div>
-
-      <!-- Podcast Sidebar -->
-      <div class="fade-up">
-        <div class="podcast-cover"></div>
-        <p style="font-size:0.8rem; color: var(--muted); margin-bottom:16px; font-weight:300; line-height:1.8;">
-          Gespräche über Bewusstsein, Identität und das, was uns wirklich antreibt. Ohne Filter. Ohne Schminke.
-        </p>
-        <div class="platform-badges">
-          <a href="#" class="platform-badge">
-            <svg class="platform-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polygon points="10,8 16,12 10,16" fill="currentColor" stroke="none"/></svg>
-            Auf YouTube anhören
+      <aside class="podcast-sidebar reveal">
+        <img src="/images/podcast.jpg" alt="Der Krieger Podcast Cover" class="podcast-cover" id="podcastCover">
+        <div class="platform-links">
+          <a href="#" class="platform-btn" id="platformYT" target="_blank" rel="noopener">
+            <svg class="platform-icon" viewBox="0 0 24 24"><path d="M22.54 6.42A2.78 2.78 0 0 0 20.59 4.5C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.5C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z" fill="#FF0000"/><polygon points="9.75,15.02 15.5,12 9.75,8.98" fill="#fff"/></svg>
+            YouTube
           </a>
-          <a href="#" class="platform-badge">
-            <svg class="platform-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
-            Auf Spotify hören
+          <a href="#" class="platform-btn" id="platformSP" target="_blank" rel="noopener">
+            <svg class="platform-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#1DB954"/><path d="M17.9 10.9C14.7 9 9.35 8.8 6.3 9.75c-.5.15-1-.15-1.15-.6-.15-.5.15-1 .6-1.15 3.55-1.05 9.4-.85 13.1 1.35.45.25.6.85.35 1.3-.25.35-.85.5-1.3.25zm-.1 2.8c-.25.35-.7.5-1.05.25-2.7-1.65-6.8-2.15-9.95-1.15-.4.1-.85-.1-.95-.5-.1-.4.1-.85.5-.95 3.65-1.1 8.15-.55 11.25 1.35.3.15.45.65.2 1zm-1.2 2.75c-.2.3-.55.4-.85.2-2.35-1.45-5.3-1.75-8.8-.95-.35.1-.65-.15-.75-.45-.1-.35.15-.65.45-.75 3.8-.85 7.1-.5 9.7 1.1.35.15.4.55.25.85z" fill="#fff"/></svg>
+            Spotify
           </a>
-          <a href="#" class="platform-badge">
-            <svg class="platform-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="12" cy="12" r="3"/></svg>
+          <a href="#" class="platform-btn" id="platformAP" target="_blank" rel="noopener">
+            <svg class="platform-icon" viewBox="0 0 24 24"><rect width="24" height="24" rx="5" fill="#D56BFE"/><path d="M12 3.5a8.5 8.5 0 1 0 0 17 8.5 8.5 0 0 0 0-17zm0 3.2a5.3 5.3 0 0 1 3.5 9.2 7.2 7.2 0 0 0-.8-2.5c-.6-1.2-1.3-2-2.7-2s-2.1.8-2.7 2a7.2 7.2 0 0 0-.8 2.5A5.3 5.3 0 0 1 12 6.7zm0 2.8c.7 0 1.3.6 1.3 1.3s-.6 1.3-1.3 1.3-1.3-.6-1.3-1.3.6-1.3 1.3-1.3zm-2 4.5c.2-.9.6-2.5 2-2.5s1.8 1.6 2 2.5c.2.8.2 1.5.1 2a5.3 5.3 0 0 1-4.2 0c-.1-.5-.1-1.2.1-2z" fill="#fff"/></svg>
             Apple Podcasts
           </a>
         </div>
-      </div>
+      </aside>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ═══════════════════════════════════════
-       EVENTS
-  ═══════════════════════════════════════ -->
-  <section id="events" class="section">
-    <div class="section-header fade-up">
-      <div class="section-label">Termine 2025</div>
-      <h2>Live Events</h2>
-    </div>
-    <div class="event-list">
-
-      <div class="event-row fade-up">
-        <div class="event-date">
-          <div class="event-day">12</div>
-          <div class="event-month">Nov</div>
-        </div>
-        <div class="event-divider"></div>
-        <div class="event-info">
-          <div class="event-title">Krieger Live — Wien</div>
-          <div class="event-location">Volkstheater Wien</div>
-        </div>
-        <span class="status-available">Tickets verfügbar</span>
-        <a href="#" class="btn-primary ticket-btn">Ticket sichern</a>
-      </div>
-
-      <div class="event-row fade-up">
-        <div class="event-date">
-          <div class="event-day">28</div>
-          <div class="event-month">Nov</div>
-        </div>
-        <div class="event-divider"></div>
-        <div class="event-info">
-          <div class="event-title">Unternehmer Summit</div>
-          <div class="event-location">Haus der Industrie, Wien</div>
-        </div>
-        <span class="status-fast">Fast ausverkauft</span>
-        <a href="#" class="btn-primary ticket-btn">Ticket sichern</a>
-      </div>
-
-      <div class="event-row fade-up">
-        <div class="event-date">
-          <div class="event-day">14</div>
-          <div class="event-month">Dez</div>
-        </div>
-        <div class="event-divider"></div>
-        <div class="event-info">
-          <div class="event-title">Jahresabschluss Talk</div>
-          <div class="event-location">Radiokulturhaus, Wien</div>
-        </div>
-        <span class="status-sold">Ausverkauft</span>
-        <a href="#" class="btn-outline ticket-btn" style="opacity:0.4; cursor:default;">Warteliste</a>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════
-       SPEAKER
-  ═══════════════════════════════════════ -->
-  <section id="speaker" class="section section-dark">
-    <div class="speaker-grid">
-      <!-- Text -->
+<section id="events">
+  <div class="container">
+    <div class="events-header">
       <div>
-        <div class="section-label fade-up">Keynotes & Impulse</div>
-        <h2 class="fade-up">Martin als<br>Speaker</h2>
-        <p class="fade-up" style="color: var(--muted); margin: 20px 0; font-weight:300; line-height:1.8;">
-          Impulsvorträge für Unternehmen, Teams und Events. Martin Krieger verbindet persönliche Transformation mit unternehmerischem Denken — authentisch, polarisierend, nachhaltig.
-        </p>
-        <div class="speaker-features fade-up">
-          <div class="speaker-feature">
-            <div class="feature-icon">◈</div>
-            <div>
-              <div class="feature-title">Bewusstsein & Identität</div>
-              <div class="feature-desc">Wer bist du wirklich — jenseits von Rolle und Maske?</div>
-            </div>
+        <span class="section-label reveal">Live-Auftritte</span>
+        <h2 class="section-title reveal">Erlebe Martin<br><span>live.</span></h2>
+      </div>
+    </div>
+    <div class="event-list" id="eventList"></div>
+  </div>
+</section>
+
+<section id="speaker">
+  <div class="container">
+    <div class="speaker-layout">
+      <div class="speaker-image-wrap reveal">
+        <img src="/images/speaker.jpg" alt="Martin Krieger als Speaker" class="speaker-photo">
+      </div>
+      <div>
+        <span class="section-label reveal">Keynote & Workshop</span>
+        <h2 class="section-title reveal">Martin als<br><span>Speaker buchen.</span></h2>
+        <p class="section-intro reveal">Ob Unternehmenskonferenz, Führungskräftetagung oder öffentliches Event — Martin bringt die Energie und die Substanz, die Menschen wirklich bewegt.</p>
+        <div class="divider reveal"></div>
+        <div class="speaker-topics reveal">
+          <div class="topic-item">
+            <span class="topic-num">01</span>
+            <div><div class="topic-name">Bewusstsein & Identität</div><div class="topic-desc">Wer bist du wirklich — jenseits deiner Rolle, deines Titels, deiner Erfolge? Ein Keynote-Format, das Menschen aus dem Autopilot holt.</div></div>
           </div>
-          <div class="speaker-feature">
-            <div class="feature-icon">◈</div>
-            <div>
-              <div class="feature-title">Führung mit Haltung</div>
-              <div class="feature-desc">Führen ohne sich selbst zu verlieren.</div>
-            </div>
+          <div class="topic-item">
+            <span class="topic-num">02</span>
+            <div><div class="topic-name">Authentische Führung</div><div class="topic-desc">Führung beginnt im Inneren. Für Führungskräfte, die aufgehört haben zu performen — und anfangen wollen, wirklich zu führen.</div></div>
           </div>
-          <div class="speaker-feature">
-            <div class="feature-icon">◈</div>
-            <div>
-              <div class="feature-title">Energie & Performance</div>
-              <div class="feature-desc">Nicht mehr Einsatz — sondern der richtige.</div>
-            </div>
+          <div class="topic-item">
+            <span class="topic-num">03</span>
+            <div><div class="topic-name">Energie & Resilienz</div><div class="topic-desc">Warum nicht Zeit-, sondern Energiemanagement der entscheidende Faktor ist. Praktisch, direkt, ohne Selbsthilfe-Floskeln.</div></div>
           </div>
         </div>
-        <!-- Booking Form -->
-        <div class="booking-form fade-up">
-          <div class="form-title">Speaker anfragen</div>
-          <form id="bookingForm">
-            <div class="form-grid">
-              <div class="form-field">
-                <label>Vorname</label>
-                <input type="text" name="vorname" placeholder="Max" required>
-              </div>
-              <div class="form-field">
-                <label>Nachname</label>
-                <input type="text" name="nachname" placeholder="Mustermann" required>
-              </div>
-              <div class="form-field">
-                <label>E-Mail</label>
-                <input type="email" name="email" placeholder="max@firma.at" required>
-              </div>
-              <div class="form-field">
-                <label>Event-Datum</label>
-                <input type="date" name="datum">
-              </div>
-              <div class="form-field full">
-                <label>Art des Events</label>
-                <select name="event">
-                  <option value="">Bitte wählen…</option>
-                  <option>Unternehmensevent</option>
-                  <option>Konferenz / Summit</option>
-                  <option>Team-Workshop</option>
-                  <option>Online-Event</option>
-                  <option>Sonstiges</option>
-                </select>
-              </div>
-              <div class="form-field full">
-                <label>Nachricht</label>
-                <textarea name="nachricht" placeholder="Kurze Beschreibung des Events, Thema, Erwartungen…"></textarea>
-              </div>
+        <div class="booking-form reveal">
+          <h3>Anfrage senden</h3>
+          <form id="bookingForm" name="booking" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="booking">
+            <p style="display:none"><input name="bot-field"></p>
+            <div class="form-row">
+              <div class="form-group"><label for="fname">Vorname</label><input type="text" id="fname" name="vorname" placeholder="Max" required></div>
+              <div class="form-group"><label for="lname">Nachname</label><input type="text" id="lname" name="nachname" placeholder="Mustermann" required></div>
             </div>
-            <button type="submit" class="btn-primary form-submit">Anfrage absenden</button>
+            <div class="form-group full"><label for="email">E-Mail</label><input type="email" id="email" name="email" placeholder="mail@beispiel.at" required></div>
+            <div class="form-group full"><label for="eventdate">Geplantes Event-Datum</label><input type="date" id="eventdate" name="event_datum"></div>
+            <div class="form-group full">
+              <label for="eventtype">Art des Events</label>
+              <select id="eventtype" name="event_art">
+                <option value="" disabled selected>Bitte wählen…</option>
+                <option>Unternehmenskonferenz</option>
+                <option>Führungskräfte-Workshop</option>
+                <option>Öffentliches Event</option>
+                <option>Podcast / Interview</option>
+                <option>Sonstiges</option>
+              </select>
+            </div>
+            <div class="form-group full"><label for="message">Nachricht</label><textarea id="message" name="nachricht" placeholder="Erzähl mir kurz vom Event, der Zielgruppe und was du dir von Martins Auftritt erwartest…"></textarea></div>
+            <button type="submit" class="btn-primary" style="width:100%;justify-content:center">Anfrage senden →</button>
           </form>
+          <div class="form-success" id="formSuccess">
+            <div class="success-icon">✅</div>
+            <h4>Anfrage erhalten!</h4>
+            <p>Danke für deine Anfrage. Martin meldet sich innerhalb von 48 Stunden bei dir.</p>
+          </div>
         </div>
       </div>
-
-      <!-- Foto -->
-      <div class="speaker-photo-wrap fade-up">
-        <div class="speaker-photo"></div>
-        <div class="speaker-photo-bar"></div>
-        <div class="speaker-photo-tag">Speaker</div>
-      </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ═══════════════════════════════════════
-       BLOG
-  ═══════════════════════════════════════ -->
-  <section id="blog" class="section">
-    <div class="section-header fade-up">
-      <div class="section-label">Manifeste & Gedanken</div>
-      <h2>Blog</h2>
-    </div>
-    <div class="blog-grid">
+<section id="blog">
+  <div class="container">
+    <span class="section-label reveal">Manifeste & Gedanken</span>
+    <h2 class="section-title reveal">Worte, die<br><span>bleiben.</span></h2>
+    <div class="blog-grid" id="blogGrid"></div>
+  </div>
+</section>
 
-      <div class="blog-card fade-up">
-        <div class="blog-card-img" style="background-image: url('images/musik.jpg');"></div>
-        <div class="blog-card-body">
-          <div class="blog-tag">Identität</div>
-          <div class="blog-title">Du bist nicht deine Geschichte</div>
-          <div class="blog-date">18. März 2025</div>
-        </div>
+<footer id="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-logo">DER <span>KRIEGER</span></div>
+        <div class="footer-tagline">Podcast · Speaker · Musiker</div>
       </div>
-
-      <div class="blog-card fade-up" style="transition-delay:0.1s">
-        <div class="blog-card-img" style="background-image: url('images/speaker-clean.jpg');"></div>
-        <div class="blog-card-body">
-          <div class="blog-tag">Gesellschaft</div>
-          <div class="blog-title">Warum wir kollektiv schlafwandeln</div>
-          <div class="blog-date">02. Februar 2025</div>
-        </div>
-      </div>
-
-      <div class="blog-card fade-up" style="transition-delay:0.2s">
-        <div class="blog-card-img" style="background-image: url('images/podcast.jpg');"></div>
-        <div class="blog-card-body">
-          <div class="blog-tag">Bewusstsein</div>
-          <div class="blog-title">Das Schweigen als radikaler Akt</div>
-          <div class="blog-date">11. Jänner 2025</div>
-        </div>
-      </div>
-
+      <nav class="footer-links">
+        <a href="#podcast">Podcast</a>
+        <a href="#events">Events</a>
+        <a href="#speaker">Speaker</a>
+        <a href="#blog">Blog</a>
+        <a href="/impressum.html">Impressum</a>
+        <a href="/datenschutz.html">Datenschutz</a>
+      </nav>
     </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════
-       FOOTER
-  ═══════════════════════════════════════ -->
-  <footer>
-    <div class="footer-logo">DER <span>KRIEGER</span></div>
-    <div class="footer-links">
-      <a href="#">Impressum</a>
-      <a href="#">Datenschutz</a>
-      <a href="#">Kontakt</a>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 Martin Krieger — derkrieger.at</p>
+      <p class="footer-copy">Made with ❤ in Vienna</p>
     </div>
-    <div class="footer-copy">© 2025 Martin Krieger</div>
-  </footer>
+  </div>
+</footer>
 
-  <script src="js/main.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

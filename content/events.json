@@ -1,0 +1,7 @@
+{
+  "events": [
+    {"date":"2026-09-15","title":"Krieger Live — Wien","location":"WUK Wien, Währinger Str. 59, 1090 Wien","status":"available","ticket_url":"https://oeticket.com"},
+    {"date":"2026-10-10","title":"Entrepreneur Summit Vienna","location":"Tech Gate Vienna, 1220 Wien","status":"limited","ticket_url":"https://oeticket.com"},
+    {"date":"2026-11-28","title":"Jahresabschlussgespräch","location":"Wiener Konzerthaus, 1030 Wien","status":"sold_out","ticket_url":""}
+  ]
+}

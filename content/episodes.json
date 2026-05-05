@@ -1,0 +1,9 @@
+{
+  "episodes": [
+    {"number":25,"title":"Die Kunst, Nein zu sagen","description":"Ein klares Nein ist das stärkste Ja, das du dir selbst geben kannst. Martin teilt, warum Grenzen kein Akt der Ablehnung sind — sondern ein Akt der Selbstachtung.","duration":52,"is_new":true,"visible":true,"youtube_url":"https://youtube.com","spotify_url":"https://spotify.com"},
+    {"number":24,"title":"Zwischen Identität und Wandel","description":"Wer bist du, wenn du aufhörst, die Person zu sein, die du immer warst? Ein ehrliches Gespräch über Transformation — und was sie wirklich kostet.","duration":58,"is_new":false,"visible":true,"youtube_url":"https://youtube.com","spotify_url":"https://spotify.com"},
+    {"number":23,"title":"Warum Stille unbequem macht","description":"Wir füllen jede Sekunde mit Lärm. Podcasts, Musik, Scrollen. Was passiert, wenn du aufhörst? Martin über das, was in der Stille wartet.","duration":44,"is_new":false,"visible":true,"youtube_url":"https://youtube.com","spotify_url":"https://spotify.com"},
+    {"number":22,"title":"Führung ohne Maske","description":"Die meisten Führungskräfte führen eine Rolle. Martin erklärt, warum authentische Führung mit einer einzigen Fähigkeit beginnt: Verletzlichkeit zulassen.","duration":61,"is_new":false,"visible":true,"youtube_url":"https://youtube.com","spotify_url":"https://spotify.com"},
+    {"number":21,"title":"Das Ego als Werkzeug","description":"Ego ist nicht dein Feind. Es ist ein Werkzeug — und wie jedes Werkzeug kann es bauen oder zerstören. Diese Episode über den Unterschied.","duration":49,"is_new":false,"visible":true,"youtube_url":"https://youtube.com","spotify_url":"https://spotify.com"}
+  ]
+}
