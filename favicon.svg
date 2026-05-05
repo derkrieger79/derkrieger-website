@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Background -->
+  <rect width="32" height="32" rx="4" fill="#0e0e0e"/>
+  <!-- Orange accent bar bottom -->
+  <rect x="4" y="27.5" width="24" height="2.5" rx="1" fill="#FF4200"/>
+  <!-- "D" letter - white -->
+  <rect x="4" y="5" width="3" height="20" fill="#ffffff"/>
+  <path d="M7 5 Q14 5 14 15 Q14 25 7 25 L7 22 Q11.5 22 11.5 15 Q11.5 8 7 8 Z" fill="#ffffff"/>
+  <!-- "K" letter - orange -->
+  <rect x="16" y="5" width="3" height="20" fill="#FF4200"/>
+  <polygon points="19,14 28,5 28,9.5 21,15 28,22.5 28,25 19,16.5" fill="#FF4200"/>
+</svg>
