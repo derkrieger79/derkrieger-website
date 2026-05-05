@@ -5,170 +5,229 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Der Krieger — Podcast · Speaker · Musiker</title>
   <meta name="description" content="Martin Krieger — Podcast-Host, Speaker und Musiker aus Wien. Bewusstsein trifft urbane Energie. Ehrlich. Direkt. Ohne Filter.">
-  <meta name="author" content="Martin Krieger">
   <meta property="og:title" content="Der Krieger">
-  <meta property="og:description" content="Podcast · Speaker · Musiker. Bewusstsein trifft urbane Energie.">
+  <meta property="og:description" content="Podcast · Speaker · Musiker. Demnächst.">
   <meta property="og:image" content="https://derkrieger.at/images/hero.jpg">
   <meta property="og:url" content="https://derkrieger.at">
   <meta property="og:type" content="website">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&family=Manrope:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- Google Fonts werden erst nach Cookie-Zustimmung geladen (DSGVO) -->
   <link rel="stylesheet" href="css/style.css">
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
 
+<!-- ══ NAVBAR ══════════════════════════════════════════════════ -->
 <nav id="navbar">
   <a href="#hero" class="nav-logo">DER <span>KRIEGER</span></a>
   <div class="nav-links" id="navLinks">
-    <a href="#podcast">Podcast</a>
-    <a href="#events">Events</a>
-    <a href="#speaker">Speaker</a>
-    <a href="#blog">Blog</a>
-    <a href="#speaker" class="btn-outline">Buchen</a>
+    <a href="#was-kommt">Was kommt</a>
+    <a href="#martin">Martin</a>
+    <a href="#kontakt">Kontakt</a>
   </div>
   <div class="nav-toggle" id="navToggle" aria-label="Menü öffnen">
     <span></span><span></span><span></span>
   </div>
 </nav>
 
+<!-- ══ HERO ════════════════════════════════════════════════════ -->
 <section id="hero">
   <div class="hero-bg"></div>
   <div class="hero-overlay"></div>
+  <div class="hero-noise"></div>
   <div class="hero-accent-bar"></div>
+
   <div class="hero-content">
-    <span class="section-label" id="heroSubtitle">Podcast · Speaker · Musiker</span>
-    <h1>DER<br><span>KRIEGER</span></h1>
-    <p id="heroClaim">Bewusstsein trifft urbane Energie.<br>Ehrlich. Direkt. Ohne Filter.</p>
-    <div class="hero-btns">
-      <a href="#podcast" class="btn-primary">▶&nbsp; Podcast hören</a>
-      <a href="#speaker" class="btn-outline">Speaker buchen</a>
+    <div class="hero-badge animate-1">
+      <span class="badge-dot"></span>
+      Demnächst live
+    </div>
+    <h1 class="animate-2">DER<br><span>KRIEGER</span></h1>
+    <p class="animate-3">
+      Bewusstsein trifft urbane Energie.<br>
+      Ehrlich. Direkt. Ohne Filter.
+    </p>
+    <div class="hero-tags animate-4">
+      <span>Podcast</span>
+      <span class="tag-dot">·</span>
+      <span>Speaker</span>
+      <span class="tag-dot">·</span>
+      <span>Musiker</span>
+      <span class="tag-dot">·</span>
+      <span>Wien</span>
+    </div>
+    <div class="hero-scroll animate-5">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
     </div>
   </div>
 </section>
 
-<section id="stats">
-  <div class="stats-grid">
-    <div class="stat-item reveal"><span class="stat-number" id="statEpisodes">24</span><span class="stat-label">Episoden</span></div>
-    <div class="stat-item reveal"><span class="stat-number" id="statFollowers">4.8k</span><span class="stat-label">Follower</span></div>
-    <div class="stat-item reveal"><span class="stat-number" id="statYears">6+</span><span class="stat-label">Jahre on Stage</span></div>
-    <div class="stat-item reveal"><span class="stat-number" id="statImpact">∞</span><span class="stat-label">Impact</span></div>
+<!-- ══ TICKER ══════════════════════════════════════════════════ -->
+<div class="ticker-wrap">
+  <div class="ticker">
+    <span>Podcast</span><span class="tick-sep">—</span>
+    <span>Speaker</span><span class="tick-sep">—</span>
+    <span>Live-Events</span><span class="tick-sep">—</span>
+    <span>Blog</span><span class="tick-sep">—</span>
+    <span>Musik</span><span class="tick-sep">—</span>
+    <span>Manifeste</span><span class="tick-sep">—</span>
+    <span>Podcast</span><span class="tick-sep">—</span>
+    <span>Speaker</span><span class="tick-sep">—</span>
+    <span>Live-Events</span><span class="tick-sep">—</span>
+    <span>Blog</span><span class="tick-sep">—</span>
+    <span>Musik</span><span class="tick-sep">—</span>
+    <span>Manifeste</span><span class="tick-sep">—</span>
+    <span>Podcast</span><span class="tick-sep">—</span>
+    <span>Speaker</span><span class="tick-sep">—</span>
+    <span>Live-Events</span><span class="tick-sep">—</span>
+    <span>Blog</span><span class="tick-sep">—</span>
+    <span>Musik</span><span class="tick-sep">—</span>
+    <span>Manifeste</span><span class="tick-sep">—</span>
   </div>
-</section>
+</div>
 
-<section id="podcast">
+<!-- ══ WAS KOMMT ═══════════════════════════════════════════════ -->
+<section id="was-kommt">
   <div class="container">
-    <div class="podcast-layout">
-      <div>
-        <span class="section-label reveal">Der Krieger Podcast</span>
-        <h2 class="section-title reveal">Rohe Wahrheit.<br><span>Ohne Filter.</span></h2>
-        <p class="section-intro reveal">Jede Episode ist ein Gespräch — mit Gästen, mit mir selbst, mit dem, was ist. Kein Skript. Keine Pose. Nur ehrliche Auseinandersetzung mit den Themen, die wirklich zählen.</p>
-        <div class="divider reveal"></div>
-        <div class="episode-list" id="episodeList"></div>
-      </div>
-      <aside class="podcast-sidebar reveal">
-        <img src="/images/podcast.jpg" alt="Der Krieger Podcast Cover" class="podcast-cover" id="podcastCover">
-        <div class="platform-links">
-          <a href="#" class="platform-btn" id="platformYT" target="_blank" rel="noopener">
-            <svg class="platform-icon" viewBox="0 0 24 24"><path d="M22.54 6.42A2.78 2.78 0 0 0 20.59 4.5C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.5C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z" fill="#FF0000"/><polygon points="9.75,15.02 15.5,12 9.75,8.98" fill="#fff"/></svg>
-            YouTube
-          </a>
-          <a href="#" class="platform-btn" id="platformSP" target="_blank" rel="noopener">
-            <svg class="platform-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#1DB954"/><path d="M17.9 10.9C14.7 9 9.35 8.8 6.3 9.75c-.5.15-1-.15-1.15-.6-.15-.5.15-1 .6-1.15 3.55-1.05 9.4-.85 13.1 1.35.45.25.6.85.35 1.3-.25.35-.85.5-1.3.25zm-.1 2.8c-.25.35-.7.5-1.05.25-2.7-1.65-6.8-2.15-9.95-1.15-.4.1-.85-.1-.95-.5-.1-.4.1-.85.5-.95 3.65-1.1 8.15-.55 11.25 1.35.3.15.45.65.2 1zm-1.2 2.75c-.2.3-.55.4-.85.2-2.35-1.45-5.3-1.75-8.8-.95-.35.1-.65-.15-.75-.45-.1-.35.15-.65.45-.75 3.8-.85 7.1-.5 9.7 1.1.35.15.4.55.25.85z" fill="#fff"/></svg>
-            Spotify
-          </a>
-          <a href="#" class="platform-btn" id="platformAP" target="_blank" rel="noopener">
-            <svg class="platform-icon" viewBox="0 0 24 24"><rect width="24" height="24" rx="5" fill="#D56BFE"/><path d="M12 3.5a8.5 8.5 0 1 0 0 17 8.5 8.5 0 0 0 0-17zm0 3.2a5.3 5.3 0 0 1 3.5 9.2 7.2 7.2 0 0 0-.8-2.5c-.6-1.2-1.3-2-2.7-2s-2.1.8-2.7 2a7.2 7.2 0 0 0-.8 2.5A5.3 5.3 0 0 1 12 6.7zm0 2.8c.7 0 1.3.6 1.3 1.3s-.6 1.3-1.3 1.3-1.3-.6-1.3-1.3.6-1.3 1.3-1.3zm-2 4.5c.2-.9.6-2.5 2-2.5s1.8 1.6 2 2.5c.2.8.2 1.5.1 2a5.3 5.3 0 0 1-4.2 0c-.1-.5-.1-1.2.1-2z" fill="#fff"/></svg>
-            Apple Podcasts
-          </a>
-        </div>
-      </aside>
-    </div>
-  </div>
-</section>
+    <span class="section-label reveal">Was dich erwartet</span>
+    <h2 class="section-title reveal">Alles an einem Ort.<br><span>Bald.</span></h2>
+    <p class="section-intro reveal">Diese Website wird die zentrale Anlaufstelle für alles, was Martin Krieger bewegt — Podcast, Auftritte, Speaker-Buchungen und Texte, die bleiben.</p>
 
-<section id="events">
-  <div class="container">
-    <div class="events-header">
-      <div>
-        <span class="section-label reveal">Live-Auftritte</span>
-        <h2 class="section-title reveal">Erlebe Martin<br><span>live.</span></h2>
-      </div>
-    </div>
-    <div class="event-list" id="eventList"></div>
-  </div>
-</section>
+    <div class="teaser-grid reveal">
 
-<section id="speaker">
-  <div class="container">
-    <div class="speaker-layout">
-      <div class="speaker-image-wrap reveal">
-        <img src="/images/speaker.jpg" alt="Martin Krieger als Speaker" class="speaker-photo">
-      </div>
-      <div>
-        <span class="section-label reveal">Keynote & Workshop</span>
-        <h2 class="section-title reveal">Martin als<br><span>Speaker buchen.</span></h2>
-        <p class="section-intro reveal">Ob Unternehmenskonferenz, Führungskräftetagung oder öffentliches Event — Martin bringt die Energie und die Substanz, die Menschen wirklich bewegt.</p>
-        <div class="divider reveal"></div>
-        <div class="speaker-topics reveal">
-          <div class="topic-item">
-            <span class="topic-num">01</span>
-            <div><div class="topic-name">Bewusstsein & Identität</div><div class="topic-desc">Wer bist du wirklich — jenseits deiner Rolle, deines Titels, deiner Erfolge? Ein Keynote-Format, das Menschen aus dem Autopilot holt.</div></div>
-          </div>
-          <div class="topic-item">
-            <span class="topic-num">02</span>
-            <div><div class="topic-name">Authentische Führung</div><div class="topic-desc">Führung beginnt im Inneren. Für Führungskräfte, die aufgehört haben zu performen — und anfangen wollen, wirklich zu führen.</div></div>
-          </div>
-          <div class="topic-item">
-            <span class="topic-num">03</span>
-            <div><div class="topic-name">Energie & Resilienz</div><div class="topic-desc">Warum nicht Zeit-, sondern Energiemanagement der entscheidende Faktor ist. Praktisch, direkt, ohne Selbsthilfe-Floskeln.</div></div>
-          </div>
-        </div>
-        <div class="booking-form reveal">
-          <h3>Anfrage senden</h3>
-          <form id="bookingForm" name="booking" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-            <input type="hidden" name="form-name" value="booking">
-            <p style="display:none"><input name="bot-field"></p>
-            <div class="form-row">
-              <div class="form-group"><label for="fname">Vorname</label><input type="text" id="fname" name="vorname" placeholder="Max" required></div>
-              <div class="form-group"><label for="lname">Nachname</label><input type="text" id="lname" name="nachname" placeholder="Mustermann" required></div>
-            </div>
-            <div class="form-group full"><label for="email">E-Mail</label><input type="email" id="email" name="email" placeholder="mail@beispiel.at" required></div>
-            <div class="form-group full"><label for="eventdate">Geplantes Event-Datum</label><input type="date" id="eventdate" name="event_datum"></div>
-            <div class="form-group full">
-              <label for="eventtype">Art des Events</label>
-              <select id="eventtype" name="event_art">
-                <option value="" disabled selected>Bitte wählen…</option>
-                <option>Unternehmenskonferenz</option>
-                <option>Führungskräfte-Workshop</option>
-                <option>Öffentliches Event</option>
-                <option>Podcast / Interview</option>
-                <option>Sonstiges</option>
-              </select>
-            </div>
-            <div class="form-group full"><label for="message">Nachricht</label><textarea id="message" name="nachricht" placeholder="Erzähl mir kurz vom Event, der Zielgruppe und was du dir von Martins Auftritt erwartest…"></textarea></div>
-            <button type="submit" class="btn-primary" style="width:100%;justify-content:center">Anfrage senden →</button>
-          </form>
-          <div class="form-success" id="formSuccess">
-            <div class="success-icon">✅</div>
-            <h4>Anfrage erhalten!</h4>
-            <p>Danke für deine Anfrage. Martin meldet sich innerhalb von 48 Stunden bei dir.</p>
-          </div>
+      <div class="teaser-card">
+        <div class="teaser-icon">🎙</div>
+        <div class="teaser-soon">In Kürze</div>
+        <h3 class="teaser-title">Der Krieger Podcast</h3>
+        <p class="teaser-desc">Ungefilterte Gespräche über Bewusstsein, Identität und das, was uns wirklich antreibt. Auf YouTube, Spotify und Apple Podcasts.</p>
+        <div class="teaser-platforms">
+          <span>YouTube</span>
+          <span>Spotify</span>
+          <span>Apple Podcasts</span>
         </div>
       </div>
+
+      <div class="teaser-card">
+        <div class="teaser-icon">📅</div>
+        <div class="teaser-soon">In Kürze</div>
+        <h3 class="teaser-title">Live-Events</h3>
+        <p class="teaser-desc">Martin live erleben — Abende für alle, die mehr wollen als Konsum. Termine für Wien und weitere Städte folgen bald.</p>
+        <div class="teaser-platforms">
+          <span>Wien</span>
+          <span>Österreich</span>
+          <span>DACH</span>
+        </div>
+      </div>
+
+      <div class="teaser-card">
+        <div class="teaser-icon">🎤</div>
+        <div class="teaser-soon">Buchungen öffnen bald</div>
+        <h3 class="teaser-title">Speaker & Keynotes</h3>
+        <p class="teaser-desc">Bewusstsein, Führung, Energie — drei Themen, die Unternehmen und Menschen wirklich bewegen. Für Konferenzen, Tagungen und Events.</p>
+        <div class="teaser-platforms">
+          <span>Keynote</span>
+          <span>Workshop</span>
+          <span>Moderation</span>
+        </div>
+      </div>
+
+      <div class="teaser-card">
+        <div class="teaser-icon">✍️</div>
+        <div class="teaser-soon">In Kürze</div>
+        <h3 class="teaser-title">Blog & Manifeste</h3>
+        <p class="teaser-desc">Texte, die nicht vergessen werden. Keine Tipps-Listen, keine Clickbait-Überschriften — nur Gedanken, die sich lohnen zu lesen.</p>
+        <div class="teaser-platforms">
+          <span>Identität</span>
+          <span>Führung</span>
+          <span>Bewusstsein</span>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
 
-<section id="blog">
-  <div class="container">
-    <span class="section-label reveal">Manifeste & Gedanken</span>
-    <h2 class="section-title reveal">Worte, die<br><span>bleiben.</span></h2>
-    <div class="blog-grid" id="blogGrid"></div>
+<!-- ══ MARTIN ══════════════════════════════════════════════════ -->
+<section id="martin">
+  <div class="martin-layout">
+
+    <div class="martin-image-wrap">
+      <img src="/images/martin.jpeg" alt="Martin Krieger" class="martin-photo">
+      <div class="martin-image-overlay"></div>
+    </div>
+
+    <div class="martin-content reveal">
+      <span class="section-label">Der Mensch dahinter</span>
+      <h2 class="section-title">Martin<br><span>Krieger.</span></h2>
+      <div class="divider"></div>
+      <p class="martin-text">Podcast-Host. Keynote-Speaker. Musiker. Vor allem aber: jemand, der aufgehört hat, eine Rolle zu spielen — und genau darüber spricht.</p>
+      <p class="martin-text">In Wien beheimatet, auf Bühnen zu Hause. Die Marke <strong>Der Krieger</strong> steht für rohe, ungefilterte Kommunikation zu den Themen, die wirklich zählen: Bewusstsein, Identität, Führung und persönliche Transformation.</p>
+      <div class="martin-facts">
+        <div class="martin-fact">
+          <span class="fact-num">6+</span>
+          <span class="fact-label">Jahre on Stage</span>
+        </div>
+        <div class="martin-fact">
+          <span class="fact-num">∞</span>
+          <span class="fact-label">Impact</span>
+        </div>
+        <div class="martin-fact">
+          <span class="fact-num">1</span>
+          <span class="fact-label">Stimme. Ohne Filter.</span>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
+<!-- ══ KONTAKT / NEWSLETTER ════════════════════════════════════ -->
+<section id="kontakt">
+  <div class="container">
+    <div class="notify-wrap reveal">
+      <span class="section-label">Bleib informiert</span>
+      <h2 class="section-title">Den Podcast-Start<br><span>nicht verpassen.</span></h2>
+      <p class="section-intro">Trag deine E-Mail-Adresse ein und erfahre als Erstes, wenn der Podcast live geht — und wann Tickets und Buchungen verfügbar sind.</p>
+
+      <form class="newsletter-form" id="newsletterForm" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="newsletter">
+        <p style="display:none"><input name="bot-field"></p>
+
+        <div class="nl-input-row">
+          <input
+            type="email"
+            name="email"
+            id="nlEmail"
+            placeholder="deine@email.at"
+            required
+            autocomplete="email"
+          >
+          <button type="submit" class="nl-btn">
+            Jetzt eintragen
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+
+        <label class="nl-consent">
+          <input type="checkbox" name="consent" id="nlConsent" required>
+          <span>
+            Ich stimme zu, dass meine E-Mail-Adresse zum Zweck der Benachrichtigung über den Podcast-Start gespeichert wird.
+            Die <a href="/datenschutz.html">Datenschutzerklärung</a> habe ich gelesen.
+            Eine Abmeldung ist jederzeit per E-Mail an
+            <a href="mailto:martin@derkrieger.at">martin@derkrieger.at</a> möglich.
+          </span>
+        </label>
+      </form>
+
+      <div class="nl-success" id="nlSuccess">
+        <div class="nl-success-icon">✅</div>
+        <h3>Du bist dabei!</h3>
+        <p>Du wirst als Erstes informiert, wenn der Podcast live geht.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══════════════════════════════════════════════════ -->
 <footer id="footer">
   <div class="container">
     <div class="footer-inner">
@@ -177,12 +236,9 @@
         <div class="footer-tagline">Podcast · Speaker · Musiker</div>
       </div>
       <nav class="footer-links">
-        <a href="#podcast">Podcast</a>
-        <a href="#events">Events</a>
-        <a href="#speaker">Speaker</a>
-        <a href="#blog">Blog</a>
         <a href="/impressum.html">Impressum</a>
         <a href="/datenschutz.html">Datenschutz</a>
+        <a href="#kontakt">Kontakt</a>
       </nav>
     </div>
     <div class="footer-bottom">
@@ -191,6 +247,26 @@
     </div>
   </div>
 </footer>
+
+
+<!-- ══ COOKIE BANNER ══════════════════════════════════════════ -->
+<div id="cookieBanner" class="cookie-banner" aria-live="polite" role="dialog" aria-label="Cookie-Einstellungen">
+  <div class="cookie-inner">
+    <div class="cookie-text">
+      <strong>Cookies & Datenschutz</strong>
+      <p>
+        Diese Website verwendet Google Fonts zum Laden von Schriftarten, wobei Daten
+        an Google-Server in den USA übertragen werden. Mit Klick auf „Akzeptieren"
+        stimmst du dieser Übertragung zu. Bei Ablehnung werden systemweite Schriftarten verwendet.
+        Weitere Infos in der <a href="/datenschutz.html">Datenschutzerklärung</a>.
+      </p>
+    </div>
+    <div class="cookie-actions">
+      <button id="cookieDecline" class="cookie-btn-decline">Ablehnen</button>
+      <button id="cookieAccept" class="cookie-btn-accept">Akzeptieren</button>
+    </div>
+  </div>
+</div>
 
 <script src="js/main.js"></script>
 </body>
