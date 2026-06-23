@@ -94,8 +94,38 @@ function initNewsletter() {
   });
 }
 
+// ── Dein-Gespräch Anfrage-Form ────────────────────────────
+function initGespraech() {
+  const form    = document.getElementById('gespraechForm');
+  const success = document.getElementById('dgSuccess');
+  if (!form) return;
+
+  form.addEventListener('submit', async e => {
+    e.preventDefault();
+    const btn = form.querySelector('.dgp-submit');
+    btn.textContent = 'Wird gesendet…';
+    btn.disabled = true;
+
+    try {
+      const data = new FormData(form);
+      await fetch('/', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+        body: new URLSearchParams(data).toString()
+      });
+      form.style.display = 'none';
+      if (success) success.style.display = 'block';
+    } catch {
+      btn.textContent = 'Ich bin bereit.';
+      btn.disabled = false;
+      alert('Leider ist ein Fehler aufgetreten. Bitte versuche es nochmal oder schreib direkt an martin@derkrieger.at.');
+    }
+  });
+}
+
 // ── Init ──────────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
   initCookieBanner();
   initNewsletter();
+  initGespraech();
 });
