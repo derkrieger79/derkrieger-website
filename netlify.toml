@@ -19,6 +19,19 @@
   [headers.values]
     Cache-Control = "public, max-age=60"
 
+# "Dein Gespräch" ist auf die eigene Domain deingespraech.at umgezogen
+[[redirects]]
+  from = "/dein-gespraech.html"
+  to = "https://deingespraech.at/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/martin.html"
+  to = "https://deingespraech.at/ueber-martin.html"
+  status = 301
+  force = true
+
 [[redirects]]
   from = "http://derkrieger.at/*"
   to = "https://derkrieger.at/:splat"
